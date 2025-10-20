@@ -1,0 +1,146 @@
+/*  
+Author: [Your Name Here] 
+File Name: styles.css
+Date: [Current Date]
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, h3, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+  /* Style rules for body and images */
+body {
+    background-color: #e0f7fa; /* Light ocean blue background for coral restoration theme */
+}
+
+img {
+      max-width: 100%;
+     display: block;
+}
+
+/* Style rules for mobile viewport */
+
+/* Style rules to show mobile class and hide tab-desk class */
+.mobile {
+    display: block;
+}
+.tab-desk {
+    display: none;
+}
+
+/* Style rules for header area */
+
+/* New: Style rule for h1 selector within the mobile class (Emblema One) */
+.mobile h1 {
+    font-family:'Emblema One', cursive;
+    color: #004d40; /* Deep teal for headings to evoke ocean depth */
+}
+
+/* New: Style rule for h3 selector within the mobile class (Lora) */
+.mobile h3 {
+    font-family:'Lora', serif;
+    color: #00695c; /* Teal for subheadings */
+}
+
+/* Style rule for h1 and h3 selectors within the mobile class */
+.mobile h1,
+.mobile h3 {
+    padding: 2%;
+    text-align: center;
+}
+
+/* New: Style rule for the main selector (Lora) */
+main {
+    font-family: 'Lora', serif;
+    color: #263238; /* Dark gray for main text readability */
+}
+
+/* Style rules for navigation area */
+
+nav {
+    background-color: #00695c; /* Teal background for nav, ocean-inspired */
+}
+
+nav ul {
+     list-style-type: none;
+     text-align: center;
+}
+
+nav li {
+    display: block;
+     font-size: 1.5em;
+     font-family: Geneva, Arial, sans-serif;
+     font-weight: bold;
+     border-top: 0.5px solid #e0f7fa; /* Light border matching body background */
+}
+
+nav li a {
+    display: block;
+    color: #e0f7fa; /* Light text on dark nav */
+    padding: 0.5em 2em;
+    text-decoration: none;
+}
+
+  /* New: Style rule for the round class selector */
+ .round {
+    border-radius: 6px;
+}
+
+    /* New: Style rule for the #info ul selector */
+ #info ul {
+    margin-left: 10%;
+}
+
+/* Style rule for the tel-link class selector */
+.tel-link {
+     background-color: #00695c; /* Matching nav color */
+     padding: 2%;
+     width: 80%;
+     margin: 0 auto;
+}
+
+/* Style rule for anchor elements within the tel-link class */
+.tel-link a {
+    color: #e0f7fa; /* Light text */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 620px), print {
+    /* Tablet Viewport: Show tab-desk class, hide mobile class */
+    .tab-desk {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    /* Tablet Viewport: Style rules for nav area */
+    nav li {
+        border-top: none;
+        display: inline-block;
+        font-size: 1.25em;
+    }
+    nav li a {
+        padding: 0.5em; 
+    }
+}
+
+/* Media Query for Large Desktop Viewports */
+@media screen and (min-width: 1921px) {
+    body {
+        background: linear-gradient(#e0f7fa, #004d40); /* Gradient from light blue to deep teal */
+    }
+    #wrapper {
+        width: 1920px;
+        margin: 0 auto;
+    }
+    main {
+        background-color: #e0f7fa; /* Light background for main content */
+    }
+}
